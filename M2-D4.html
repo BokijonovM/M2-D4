@@ -30,6 +30,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"/>
       <title>M2-D4</title>
+      <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!--Navbar-->
@@ -75,7 +76,7 @@
           <h2>Draw Title</h2>
         </div>
         <div class="input-group ml-5 mr-5" id="draw-name">
-          <input type="text" class="form-control" maxlength="255" placeholder="Draw Name" aria-label="Draw Name" aria-describedby="addon-wrapping" required>
+          <input type="text" class="form-control" id="draw-name" maxlength="255" placeholder="Draw Name" aria-label="Draw Name" aria-describedby="addon-wrapping" required>
         </div>
      </div>
      <div class="ml-4 mt-3 pl-2" >
@@ -164,12 +165,13 @@
       </div>
     </section>
 <hr>
+
     <section class="justify-content-center position-center">
       <div class="row ">
         <div class="col row justify-content-center">
-          <button type="button" class="btn btn-secondary btn-lg mb-3">Generate Teams</button>
+          <button type="button"id="generator-button" onClick="outputInput()" class="btn btn-secondary btn-lg mb-3">Generate Teams</button>
           <div class="input-group justify-content-center">
-            <input type="text" class="">
+            <input type="text" class="team-genarator-output" disabled id="generated-output" placeholder="">
           </div>
 
 

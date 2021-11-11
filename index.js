@@ -35,3 +35,14 @@ const removeButtons5 = function(){
     let byr = removeElem.style.display="none"
     removeButtons.onclick = byr
 }
+
+const getInput = function(){
+    let teamsNames = document.getElementById("draw-name")
+    return teamsNames.value
+}
+const outputInput = function(eventData){
+    let getOutputId = document.createElement("p")
+    getOutputId.innerText = getInput()
+    let getButtonId = document.getElementById("generator-button")
+    getButtonId.onclick = console.log("Hello")
+}
