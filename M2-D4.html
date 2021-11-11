@@ -32,7 +32,150 @@
       <title>M2-D4</title>
   </head>
   <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto text-light">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="bg-dark mb-2 p-3 text-light">
+     <div class="row col-sm-12 col-md-10 col-lg-9 col-xl-8">
+        <div class="d-inline-block ml-5">
+          <h2>Draw Title</h2>
+        </div>
+        <div class="input-group ml-5 mr-5" id="draw-name">
+          <input type="text" class="form-control" maxlength="255" placeholder="Draw Name" aria-label="Draw Name" aria-describedby="addon-wrapping" required>
+        </div>
+     </div>
+     <div class="ml-4 mt-3 pl-2" >
+      <p class="col-md-12 p-dark">
+        To save and administer your draws easily, please <a class="p-register-login" href="#">login</a> or <a class="p-register-login" href="#">register</a> a Strive Generator account. However, it is not mandatory.
+    </p>
+     </div>
+      
+    </section>
+
+    <section class="mr-5">
+      <div class="row">
+        <div class="col pl-4">
+          <div class="ml-5 d-inline-block  col-md-6">
+            <h2 class="d-inline-block">Participants</h2>
+          </div>
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" disabled type="button">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon6">
+          </div>
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" disabled type="button">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon6">
+          </div>
+
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" disabled type="button">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon6">
+          </div>
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" disabled type="button">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon7">
+          </div>
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5" id="remove-button">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" onClick="removeButtons()" type="button" id="button-addon1">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5" id="remove-button1">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" onClick="removeButtons1()" type="button" id="button-addon2">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5" id="remove-button2">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" onClick="removeButtons2()" type="button" id="button-addon3">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5" id="remove-button3">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" onClick="removeButtons3()" type="button" id="button-addon4">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5" id="remove-button4">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" onClick="removeButtons4()" type="button" id="button-addon5">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+          <div class="input-group mb-3 ml-5 col-sm-8 col-md-7 col-lg-6 col-xl-5" id="remove-button5">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" onClick="removeButtons5()" type="button" id="button-addon6">X</button>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+        </div>
+      </div>
+    </section>
+<hr>
+    <section class="justify-content-center position-center">
+      <div class="row ">
+        <div class="col row justify-content-center">
+          <button type="button" class="btn btn-secondary btn-lg mb-3">Generate Teams</button>
+          <div class="input-group justify-content-center">
+            <input type="text" class="">
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
 
 
@@ -57,6 +200,7 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
     
   </body>
 </html>
