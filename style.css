@@ -18,6 +18,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+#numbers-button {
+  height: 75%;
+  margin-left: 10px;
+  font-size: 20px;
+}
 footer {
   background: #343a40;
   padding: 15px 23px;
