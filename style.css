@@ -5,3 +5,16 @@
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
+.output-g {
+  text-align: center;
+  margin-top: 3px;
+}
+#generated-output1 {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}

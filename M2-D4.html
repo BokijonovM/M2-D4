@@ -73,9 +73,9 @@
     <section class="bg-dark mb-2 p-3 text-light">
      <div class="row col-sm-12 col-md-10 col-lg-9 col-xl-8">
         <div class="d-inline-block ml-5">
-          <h2>Draw Title</h2>
+          <h2>Teams Name</h2>
         </div>
-        <div class="input-group ml-5 mr-5" id="draw-name">
+        <div class="input-group ml-5 mr-5">
           <input type="text" class="form-control" id="draw-name" maxlength="255" placeholder="Draw Name" aria-label="Draw Name" aria-describedby="addon-wrapping" required>
         </div>
      </div>
@@ -169,7 +169,10 @@
     <section class="justify-content-center position-center">
       <div class="row ">
         <div class="col row justify-content-center">
-          <button type="button"id="generator-button" onClick="outputInput()" class="btn btn-secondary btn-lg mb-3">Generate Teams</button>
+          <button type="button"id="generator-button" onClick="outputInput(event)" class="btn btn-secondary btn-lg mb-3">Generate Teams</button>
+          <div class="input-group justify-content-center">
+            <input type="text" disabled id="generated-output1" placeholder="">
+          </div>
           <div class="input-group justify-content-center">
             <input type="text" class="team-genarator-output" disabled id="generated-output" placeholder="">
           </div>

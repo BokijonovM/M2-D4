@@ -4,7 +4,6 @@ const removeButtons = function(){
     let byr = removeElem.style.display="none"
     removeButtons.onclick = byr
 }
-
 const removeButtons1 = function(){
     let removeButtons = document.getElementById("button-addon2")
     let removeElem = document.getElementById("remove-button1")
@@ -42,7 +41,8 @@ const getInput = function(){
 }
 const outputInput = function(eventData){
     let getOutputId = document.createElement("p")
-    getOutputId.innerText = getInput()
-    let getButtonId = document.getElementById("generator-button")
-    getButtonId.onclick = console.log("Hello")
+    let generatedOutput = document.getElementById("generated-output1")
+    let ab = getOutputId.innerText = getInput()
+    generatedOutput.value = ab
+    
 }
